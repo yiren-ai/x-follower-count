@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "X 粉丝数",
+  "version": "0.2.1",
+  "description": "在 X 信息流、帖子、回复、搜索和账号列表中自动显示粉丝数。无需 API Key。",
+  "minimum_chrome_version": "111",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["bridge.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

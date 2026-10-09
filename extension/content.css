@@ -1,0 +1,22 @@
+[data-xfc-name-row] {
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+[data-xfc-badge] {
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  padding: 1px 7px !important;
+  border-radius: 5px !important;
+  background: rgba(29, 155, 240, .12) !important;
+  color: #1d9bf0 !important;
+  font: 600 12px/19px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  white-space: nowrap !important;
+  cursor: help !important;
+}
+[data-xfc-badge][data-xfc-state="pending"] {
+  color: #82929e !important;
+  background: rgba(128, 128, 128, .1) !important;
+}
